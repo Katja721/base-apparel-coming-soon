@@ -245,54 +245,83 @@ p {
     left: -13rem;
     font-size: 0.9em;
   }
-  @media only screen and (max-width: 500px) and (min-width: 401px) {
-    .container {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr;
-      grid-template-areas:
-        "logo"
-        "image"
-        "paragraph-heading"
-        "email";
-      width: 100%;
-      text-align: center;
-      font-size: 18px;
-    }
-    .mobile {
-      display: block;
-    }
-    .desktop {
-      display: none;
-    }
-    .women-image {
-      position: unset;
-      width: 100%;
-      height: auto;
-    }
-    .image {
-      width: 100%;
-    }
-    .emailInput {
-      margin: 0rem 5rem;
-    }
-    .errorParagraph {
-      margin: 1rem 0rem;
-      font-size: 18px;
-    }
-    .logo {
-      margin: 0rem 2rem;
-      align-self: center;
-    }
-    .submit-button {
-      left: -13rem;
-      top: 21.5rem;
-      width: 65%;
-    }
-    .error {
-      left: -13.5rem;
-      top: 21.7rem;
-    }
+}
+@media only screen and (max-width: 500px) and (min-width: 401px) {
+  .attribution {
+    top: 0.5rem;
   }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "logo"
+      "image"
+      "paragraph-heading"
+      "email";
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 2.3em;
+    margin: 3.5rem 0rem 0rem 11.5rem;
+    width: 20%;
+    letter-spacing: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .paragraph-heading p {
+    width: 65%;
+    margin: 1rem 4rem;
+    font-size: 13px;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .women-image {
+    position: unset;
+    width: 100%;
+    height: auto;
+  }
+  .image {
+    width: 100%;
+  }
+  .emailInput {
+    margin: 1rem 4rem;
+  }
+  .errorParagraph {
+    margin: 0rem;
+    font-size: 18px;
+  }
+  .logo {
+    margin: 0rem 2rem;
+    align-self: center;
+  }
+  .submit-button {
+    left: -13rem;
+    top: 10.8rem;
+    width: 65%;
+  }
+  .error {
+    left: -9.5rem;
+    top: 14rem;
+  }
+
+  .paragraph-heading {
+    grid-area: paragraph-heading;
+    justify-self: flex-start;
+    align-self: center;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
   @media only screen and (max-width: 800px) and (min-width: 501px) {
     .container {
       grid-template-columns: 1fr;
