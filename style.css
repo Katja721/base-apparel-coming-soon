@@ -321,78 +321,72 @@ p {
     display: flex;
     flex-direction: column;
   }
-
-  @media only screen and (max-width: 800px) and (min-width: 501px) {
-    .container {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr;
-      grid-template-areas:
-        "logo"
-        "image"
-        "paragraph-heading"
-        "email";
-      width: 100%;
-    }
-    .mobile {
-      display: block;
-    }
-    .desktop {
-      display: none;
-    }
-    .image {
-      width: 100%;
-    }
-    .women-image {
-      position: unset;
-      width: 100%;
-      height: auto;
-    }
-    .emailInput {
-      margin: 0rem 10rem;
-    }
-    .submit-button {
-      left: -1rem;
-      top: 36.5rem;
-      width: 50%;
-    }
-    .error {
-      left: -1.5rem;
-      top: 36.7rem;
-    }
-    .logo {
-      align-self: center;
-      margin: 5rem 8rem 3rem 8rem;
-    }
+}
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+  .attribution {
+    top: -44.5rem;
   }
-  @media only screen and (max-width: 2000px) and (min-width: 1500px) {
-    .women-image {
-      height: 100%;
-    }
-    .container {
-      margin-bottom: 20rem;
-    }
-    .paragraph-heading p {
-      font-size: 2em;
-      line-height: 3rem;
-    }
-    .emailInput {
-      font-size: 1.3em;
-      margin: 0rem 13rem;
-    }
-    .submit-button {
-      left: 6.8rem;
-      top: 4.5rem;
-    }
-    .error {
-      left: 5.5rem;
-      top: 4.7rem;
-      transform: scale(1.4);
-    }
-    .errorParagraph {
-      margin: 1rem 15rem;
-    }
-    p.errorParagraph {
-      font-size: 1.5em;
-    }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "logo"
+      "image"
+      "paragraph-heading"
+      "email";
+    width: 100%;
+  }
+  /* .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  } */
+  .image {
+    width: 100%;
+  }
+  .women-image {
+    position: relative;
+    width: 55.8%;
+    height: auto;
+    left: 26rem;
+    top: -7.1rem;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .emailInput {
+    margin: 0rem 10rem;
+    position: relative;
+    top: -31rem;
+    left: -7rem;
+    width: 40%;
+  }
+
+  .submit-button {
+    left: -13rem;
+    top: -4.8rem;
+    width: 50%;
+  }
+  .error {
+    left: -11.5rem;
+    top: -1.4rem;
+  }
+  .logo {
+    align-self: center;
+    margin: 0rem 4rem;
+  }
+  h1 {
+    margin: -35rem 0rem 0rem -6rem;
+  }
+  .paragraph-heading p {
+    margin: 1rem -6rem;
+    width: 72%;
+  }
+  .errorParagraph {
+    margin: -30rem 4rem;
   }
 }
